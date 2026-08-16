@@ -1,157 +1,2355 @@
 <!DOCTYPE html>
-<html lang="gu">
+<html lang="en">
 <head>
-<meta name="google-site-verification" content="WNI8A6BGxdPhgMZFfHWxCXeBeTu3D9bxj1aH4V9pymo" />
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Swastik Beauty | Talala</title>
-<meta name="description" content="Swastik Beauty Talala – Beauty Parlour અને Bridal Makeup માટે Swastik Beauty.">
-<meta name="keywords" content="Swastik Beauty Talala, Beauty Parlour Talala, Beauty Salon Talala, Bridal Makeup Talala">
-<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swastik Beauty Plus | Talala</title>
+<meta name="description" content="Swastik Beauty Plus Talala - Hair Care, Skin Care, Makeup, Nail Care, Threading, Waxing and Bridal Makeup.">
+
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial;color:#111}
-.top{background:#000;color:white;padding:10px;text-align:center}
-nav{padding:18px;text-align:center;border-bottom:1px solid #ddd}
-.logo{font:32px Georgia;font-weight:bold}
-nav a,.btn{display:inline-block;margin:6px;padding:10px 15px;text-decoration:none}
-.btn{background:#111;color:white;border-radius:5px}
-.hero{position:relative;height:500px;background:#111}
-.hero img{width:100%;height:100%;object-fit:cover;opacity:.6}
-.hero div{position:absolute;top:30%;left:7%;color:white}
-.hero h1{font:50px Georgia;margin:10px 0}
-section{padding:50px 6%;max-width:1200px;margin:auto}
-h2{text-align:center;font:38px Georgia}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.card{border:1px solid #ddd;border-radius:10px;padding:20px}
-.price{display:flex;justify-content:space-between;border-bottom:1px solid #eee;padding:8px 0}
-.dark{background:#111;color:white;max-width:none}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px}
-.contact{text-align:center}
-footer{background:#000;color:white;padding:30px;text-align:center}
-@media(max-width:700px){.grid,.gallery{grid-template-columns:1fr}.hero h1{font-size:38px}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#090909;color:#fff;line-height:1.55}
+a{text-decoration:none;color:inherit}
+
+header{
+position:sticky;top:0;z-index:99;
+background:rgba(5,5,5,.94);
+backdrop-filter:blur(12px);
+border-bottom:1px solid #b8892e
+}
+
+.top{
+padding:7px;text-align:center;
+color:#f5d58a;font-size:13px
+}
+
+nav{
+max-width:1200px;margin:auto;
+display:flex;align-items:center;gap:12px;
+padding:12px 18px;overflow:auto
+}
+
+.logo{
+font-family:Georgia,serif;
+font-size:22px;color:#f5d58a;
+font-weight:700;white-space:nowrap;
+margin-right:auto
+}
+
+nav a{
+padding:8px 11px;border-radius:20px;
+white-space:nowrap;font-size:14px
+}
+
+nav a:hover{
+background:#f0c75e;color:#111
+}
+
+.lang{
+display:flex;gap:5px;white-space:nowrap
+}
+
+.lang button{
+border:1px solid #8d6926;
+background:#111;color:#fff;
+border-radius:18px;padding:7px 9px;
+cursor:pointer
+}
+
+.lang button.active{
+background:#f0c75e;color:#111
+}
+
+.hero{
+min-height:650px;
+position:relative;
+display:flex;
+align-items:center;
+overflow:hidden;
+background:#111
+}
+
+.hero:before{
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at 75% 45%,#9b6b1730,transparent 35%),
+linear-gradient(90deg,#050505e8,#05050578,#05050525)
+}
+
+.hero img{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(.52)
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:650px;
+padding:60px 7%
+}
+
+.kicker{
+letter-spacing:4px;
+color:#f5d58a;
+font-weight:bold
+}
+
+.hero h1{
+font:700 clamp(42px,7vw,76px)/1 Georgia,serif;
+margin:12px 0;
+background:linear-gradient(#fff,#d6a93d);
+-webkit-background-clip:text;
+color:transparent;
+text-shadow:0 8px 25px #000
+}
+
+.hero p{
+font-size:19px;
+color:#ffd7df
+}
+
+.btn{
+display:inline-block;
+margin:8px 5px 0 0;
+padding:12px 19px;
+border-radius:28px;
+border:1px solid #e0b94e;
+background:linear-gradient(145deg,#f7d477,#a97819);
+color:#111;
+font-weight:700;
+box-shadow:0 8px 20px #0008
+}
+
+.btn.wa{
+background:linear-gradient(145deg,#3ee27b,#129447);
+color:#fff;
+border-color:#45e98a
+}
+
+.btn.dark{
+background:#111;
+color:#fff
+}
+
+section{
+padding:60px 5%;
+max-width:1250px;
+margin:auto
+}
+
+.section-title{
+text-align:center;
+font:700 38px Georgia,serif;
+color:#f5d58a;
+margin-bottom:10px
+}
+
+.subtitle{
+text-align:center;
+color:#bbb;
+margin-bottom:30px
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
+}
+
+.service{
+background:linear-gradient(145deg,#252525,#0e0e0e);
+border:1px solid #765b24;
+border-radius:22px;
+padding:15px;
+box-shadow:
+0 15px 35px #000,
+inset 0 1px #ffffff18;
+transform:translateY(0);
+transition:.25s
+}
+
+.service:hover{
+transform:translateY(-5px);
+box-shadow:
+0 20px 40px #000,
+0 0 18px #d2a52b22
+}
+
+.service img{
+width:100%;
+height:190px;
+object-fit:cover;
+border-radius:15px;
+border:1px solid #765b24
+}
+
+.service h3{
+margin:12px 0;
+color:#f7d477;
+font-size:22px
+}
+
+.price{
+display:flex;
+justify-content:space-between;
+border-bottom:1px dashed #444;
+padding:8px 0;
+font-size:14px
+}
+
+.price b{
+color:#f5d58a
+}
+
+details{
+margin-top:12px
+}
+
+summary{
+cursor:pointer;
+color:#fff;
+background:#171717;
+padding:10px;
+border-radius:12px;
+border:1px solid #333
+}
+
+details .inside{
+padding:5px 2px
+}
+
+.work-grid,.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px
+}
+
+.work-card,.gallery img{
+border-radius:18px;
+border:1px solid #765b24;
+box-shadow:0 12px 25px #000
+}
+
+.work-card{
+overflow:hidden;
+background:#151515
+}
+
+.work-card img{
+width:100%;
+height:230px;
+object-fit:cover
+}
+
+.work-card div{
+padding:12px;
+color:#f5d58a
+}
+
+.review-area{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:22px
+}
+
+.panel{
+background:linear-gradient(145deg,#1d1d1d,#0c0c0c);
+border:1px solid #765b24;
+border-radius:22px;
+padding:22px;
+box-shadow:0 15px 35px #000
+}
+
+.stars{
+color:#ffd43b;
+font-size:24px
+}
+
+.review{
+padding:15px 0;
+border-bottom:1px solid #333
+}
+
+.review:last-child{
+border:0
+}
+
+input,textarea{
+width:100%;
+background:#111;
+color:#fff;
+border:1px solid #555;
+border-radius:12px;
+padding:12px;
+margin:7px 0;
+font:inherit
+}
+
+textarea{
+min-height:100px;
+resize:vertical
+}
+
+.contact{
+background:linear-gradient(145deg,#161616,#080808);
+max-width:none
+}
+
+.contact-inner{
+max-width:1000px;
+margin:auto;
+text-align:center
+}
+
+footer{
+text-align:center;
+padding:30px 15px;
+background:#000;
+border-top:1px solid #765b24;
+color:#aaa
+}
+
+footer strong{
+color:#f5d58a
+}
+
+.float{
+position:fixed;
+right:15px;
+bottom:15px;
+z-index:100;
+display:flex;
+flex-direction:column;
+gap:9px
+}
+
+.float a{
+width:52px;
+height:52px;
+border-radius:50%;
+display:grid;
+place-items:center;
+box-shadow:0 7px 20px #000;
+font-size:22px
+}
+
+.call{background:#1685ff}
+.wh{background:#25d366}
+
+.note{
+color:#999;
+font-size:12px;
+margin-top:12px
+}
+
+@media(max-width:850px){
+.cards,.work-grid,.gallery{
+grid-template-columns:1fr 1fr
+}
+.review-area{
+grid-template-columns:1fr
+}
+nav{
+flex-wrap:wrap
+}
+.logo{
+width:100%;
+text-align:center
+}
+}
+
+@media(max-width:560px){
+.cards,.work-grid,.gallery{
+grid-template-columns:1fr
+}
+.hero{
+min-height:570px
+}
+.hero-content{
+padding:40px 6%
+}
+.hero h1{
+font-size:48px
+}
+section{
+padding:45px 4%
+}
+.section-title{
+font-size:30px
+}
+}
 </style>
 </head>
+
 <body>
 
-<div class="top">📍 Maruti Complex, Near by Kaniya School, Talala | 📞 8200084319</div>
+<header>
+
+<div class="top" data-i18n="top">
+✨ Swastik Beauty Plus | Talala ✨
+</div>
 
 <nav>
-<div class="logo">Swastik Beauty</div>
-<a href="#services">Services</a>
-<a href="#prices">Price List</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
-<a class="btn" href="https://wa.me/918200084319">WhatsApp</a>
-</nav>
 
-<div class="hero">
-<img src="salon.jpg">
-<div>
-<p>WELCOME TO</p>
-<h1>Swastik Beauty Parlour</h1>
-<p>Enhance Your Beauty, Reveal Your Confidence</p>
-<a class="btn" href="tel:8200084319">📞 Call Now</a>
-<a class="btn" href="https://wa.me/918200084319">💬 WhatsApp</a>
+<div class="logo">
+SWASTIK BEAUTY PLUS
 </div>
+
+<a href="#home" data-i18n="home">Home</a>
+<a href="#services" data-i18n="services">Services</a>
+<a href="#work" data-i18n="ourwork">Our Work</a>
+<a href="#reviews" data-i18n="reviews">Reviews</a>
+<a href="#contact" data-i18n="contact">Contact</a>
+
+<div class="lang">
+<button onclick="setLang('en')" id="en" class="active">EN</button>
+<button onclick="setLang('gu')" id="gu">ગુજરાતી</button>
+<button onclick="setLang('hi')" id="hi">हिन्दी</button>
 </div>
+
+</nav>
+</header>
+
+
+<section class="hero" id="home">
+
+<img src="salon.jpg" alt="Swastik Beauty Plus Talala">
+
+<div class="hero-content">
+
+<div class="kicker" data-i18n="welcome">
+WELCOME TO
+</div>
+
+<h1>Swastik Beauty Plus</h1>
+
+<p data-i18n="tagline">
+Enhance Your Beauty, Reveal Your Confidence ✨
+</p>
+
+<a class="btn" href="#services" data-i18n="viewservices">
+View Services
+</a>
+
+<a class="btn wa"
+href="https://wa.me/918200084319"
+data-i18n="whatsapp">
+WhatsApp
+</a>
+
+</div>
+</section>
+
+
+<section>
+
+<h2 class="section-title" data-i18n="whytitle">
+Beauty • Style • Confidence
+</h2>
+
+<p class="subtitle" data-i18n="intro">
+Professional beauty care in Talala with personal attention and quality service.
+</p>
+
+</section>
+
 
 <section id="services">
-<h2>Our Services</h2>
-<div class="grid">
-<div class="card"><h3>💇 Hair Care</h3><p>Hair Cut, Wash, Styling, Spa, Colour, Straightening, Smoothening, Rebonding, Keratin</p></div>
-<div class="card"><h3>✨ Skin Care</h3><p>Facial, Clean-up, De-tan, Bleach, Face Massage, Skin Polishing</p></div>
-<div class="card"><h3>💄 Makeup</h3><p>Bridal, Engagement, Party, Reception, Basic Makeup, Hairstyle</p></div>
-<div class="card"><h3>💅 Nail Care</h3><p>Manicure, Pedicure, Nail Polish, Nail Art, Gel Nails</p></div>
-<div class="card"><h3>🌸 Threading</h3><p>Eyebrow, Upper Lip, Forehead, Chin, Full Face</p></div>
-<div class="card"><h3>🧴 Waxing</h3><p>Full Hand, Half Hand, Full Leg, Half Leg, Underarms, Full Body, Face Wax</p></div>
+
+<h2 class="section-title" data-i18n="servicetitle">
+Our Services
+</h2>
+
+<p class="subtitle" data-i18n="servicenote">
+Tap “View All” to see services and prices.
+</p>
+
+<div class="cards">
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Hair Care">
+
+<h3>
+💇 <span data-i18n="hair">Hair Care</span>
+</h3>
+
+<div class="price">
+<span data-i18n="haircut">Hair Cut</span>
+<b>₹100+</b>
 </div>
+
+<div class="price">
+<span>Hair Wash</span>
+<b>₹100+</b>
+</div>
+
+<div class="price">
+<span>Hair Spa</span>
+<b>₹399+</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>Hair Colour</span>
+<b>₹399+</b>
+</div>
+
+<div class="price">
+<span>Straightening</span>
+<b>₹999+</b>
+</div>
+
+<div class="price">
+<span>Smoothening</span>
+<b>₹1499+</b>
+</div>
+
+<div class="price">
+<span>Rebonding</span>
+<b>₹1499+</b>
+</div>
+
+<div class="price">
+<span>Keratin</span>
+<b>₹1999+</b>
+</div>
+
+</div>
+</details>
+
+</div>
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Skin Care">
+
+<h3>
+✨ <span data-i18n="skin">Skin Care</span>
+</h3>
+
+<div class="price">
+<span>Basic Facial</span>
+<b>₹299+</b>
+</div>
+
+<div class="price">
+<span>Premium Facial</span>
+<b>₹499+</b>
+</div>
+
+<div class="price">
+<span>Clean-up</span>
+<b>₹199+</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>De-tan</span>
+<b>₹249+</b>
+</div>
+
+<div class="price">
+<span>Bleach</span>
+<b>₹149+</b>
+</div>
+
+<div class="price">
+<span>Face Massage</span>
+<b>₹149+</b>
+</div>
+
+<div class="price">
+<span>Skin Polishing</span>
+<b>₹399+</b>
+</div>
+
+</div>
+</details>
+
+</div>
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Makeup">
+
+<h3>
+💄 <span data-i18n="makeup">Makeup</span>
+</h3>
+
+<div class="price">
+<span>Basic Makeup</span>
+<b>₹499+</b>
+</div>
+
+<div class="price">
+<span>Party Makeup</span>
+<b>₹999+</b>
+</div>
+
+<div class="price">
+<span>Engagement Makeup</span>
+<b>₹1999+</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>Reception Makeup</span>
+<b>₹2499+</b>
+</div>
+
+<div class="price">
+<span>Bridal Makeup</span>
+<b>₹4999+</b>
+</div>
+
+<div class="price">
+<span>Bridal Hairstyle</span>
+<b>₹999+</b>
+</div>
+
+</div>
+</details>
+
+</div>
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Nail Care">
+
+<h3>
+💅 <span data-i18n="nail">Nail Care</span>
+</h3>
+
+<div class="price">
+<span>Manicure</span>
+<b>₹199+</b>
+</div>
+
+<div class="price">
+<span>Pedicure</span>
+<b>₹299+</b>
+</div>
+
+<div class="price">
+<span>Nail Polish</span>
+<b>₹99+</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>Nail Art</span>
+<b>₹199+</b>
+</div>
+
+</div>
+
+</details>
+
+</div>
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Threading">
+
+<h3>
+🧵 <span data-i18n="threading">Threading</span>
+</h3>
+
+<div class="price">
+<span>Eyebrow</span>
+<b>₹30+</b>
+</div>
+
+<div class="price">
+<span>Upper Lip</span>
+<b>₹20+</b>
+</div>
+
+<div class="price">
+<span>Chin</span>
+<b>₹30+</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>Forehead</span>
+<b>₹20+</b>
+</div>
+
+<div class="price">
+<span>Full Face</span>
+<b>₹100</b>
+</div>
+
+</div>
+
+</details>
+
+</div>
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Waxing">
+
+<h3>
+🧴 <span data-i18n="waxing">Waxing</span>
+</h3>
+
+<div class="price">
+<span>Full Hand</span>
+<b>₹99/149</b>
+</div>
+
+<div class="price">
+<span>Full Leg</span>
+<b>₹249</b>
+</div>
+
+<div class="price">
+<span>Underarms</span>
+<b>₹60</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>Half Hand</span>
+<b>Contact</b>
+</div>
+
+<div class="price">
+<span>Half Leg</span>
+<b>₹99/149</b>
+</div>
+
+<div class="price">
+<span>Full Body</span>
+<b>₹499/699</b>
+</div>
+
+<div class="price">
+<span>Face Wax</span>
+<b>₹149</b>
+</div>
+
+</div>
+
+</details>
+
+</div>
+
+</div>
+
+<p class="note" data-i18n="priceNote">
+* Prices can vary according to service requirements.
+</p>
+
 </section>
 
-<section id="prices" class="dark">
-<h2>Price List</h2>
-<div class="grid">
 
-<div class="card"><h3>💇 Hair Care</h3>
-<div class="price"><span>Hair Cut</span><b>₹50/499</b></div>
-<div class="price"><span>Hair Wash</span><b>₹149</b></div>
-<div class="price"><span>Hair Styling</span><b>Contact</b></div>
-<div class="price"><span>Hair Spa</span><b>₹399/999</b></div>
-<div class="price"><span>Hair Colour</span><b>₹99</b></div>
-<div class="price"><span>Straightening</span><b>₹199/599</b></div>
-<div class="price"><span>Smoothening</span><b>₹2999/3999</b></div>
-<div class="price"><span>Rebonding</span><b>Contact</b></div>
-<div class="price"><span>Keratin</span><b>₹2999/4999</b></div>
+<section id="work">
+
+<h2 class="section-title" data-i18n="worktitle">
+Our Work
+</h2>
+
+<p class="subtitle" data-i18n="worksub">
+Your actual work photos can be added here.
+</p>
+
+<div class="work-grid">
+
+<div class="work-card">
+<img src="salon.jpg" alt="Our Work">
+<div data-i18n="work1">Hair & Beauty Work</div>
 </div>
 
-<div class="card"><h3>✨ Skin Care</h3>
-<div class="price"><span>Facial</span><b>₹249/1499</b></div>
-<div class="price"><span>Clean-up</span><b>₹199/599</b></div>
-<div class="price"><span>De-tan</span><b>₹149</b></div>
-<div class="price"><span>Bleach</span><b>₹149/349</b></div>
-<div class="price"><span>Face Massage</span><b>Contact</b></div>
-<div class="price"><span>Skin Polishing</span><b>Contact</b></div>
+<div class="work-card">
+<img src="salon.jpg" alt="Our Work">
+<div data-i18n="work2">Makeup Work</div>
 </div>
 
-<div class="card"><h3>💄 Makeup</h3>
-<div class="price"><span>Bridal</span><b>₹4999/9999</b></div>
-<div class="price"><span>Engagement</span><b>₹1499/3999</b></div>
-<div class="price"><span>Party</span><b>₹1499/9999</b></div>
-<div class="price"><span>Reception</span><b>₹1999</b></div>
-<div class="price"><span>Basic</span><b>₹999</b></div>
-<div class="price"><span>Hairstyle</span><b>₹799/999</b></div>
-</div>
-
-<div class="card"><h3>💅 Nail Care</h3>
-<div class="price"><span>Manicure</span><b>₹899</b></div>
-<div class="price"><span>Pedicure</span><b>₹899</b></div>
-<div class="price"><span>Nail Polish</span><b>₹499</b></div>
-<div class="price"><span>Nail Art</span><b>₹499/999</b></div>
-<div class="price"><span>Gel Nails</span><b>₹399</b></div>
-</div>
-
-<div class="card"><h3>🌸 Threading</h3>
-<div class="price"><span>Eyebrow</span><b>₹40</b></div>
-<div class="price"><span>Upper Lip</span><b>₹10</b></div>
-<div class="price"><span>Forehead</span><b>₹10</b></div>
-<div class="price"><span>Chin</span><b>Contact</b></div>
-<div class="price"><span>Full Face</span><b>₹100</b></div>
-</div>
-
-<div class="card"><h3>🧴 Waxing</h3>
-<div class="price"><span>Full Hand</span><b>₹99/149</b></div>
-<div class="price"><span>Half Hand</span><b>Contact</b></div>
-<div class="price"><span>Full Leg</span><b>₹249</b></div>
-<div class="price"><span>Half Leg</span><b>₹99/149</b></div>
-<div class="price"><span>Underarms</span><b>₹60</b></div>
-<div class="price"><span>Full Body</span><b>₹499/699</b></div>
-<div class="price"><span>Face Wax</span><b>₹149</b></div>
+<div class="work-card">
+<img src="salon.jpg" alt="Our Work">
+<div data-i18n="work3">Salon Work</div>
 </div>
 
 </div>
+
 </section>
 
-<section id="gallery">
-<h2>Gallery</h2>
-<div class="gallery">
-<img src="salon.jpg"><img src="salon.jpg"><img src="salon.jpg">
+
+<section id="reviews">
+
+<h2 class="section-title" data-i18n="reviewtitle">
+⭐ Customer Reviews
+</h2>
+
+<div class="review-area">
+
+<div class="panel">
+
+<div class="review">
+
+<div class="stars">★★★★★</div>
+
+<b>Kaushik Davara</b>
+
+<p data-i18n="oldreview">
+Haircut, Permanent Makeup and Bridal services.
+</p>
+
 </div>
+
+<div class="review">
+
+<div class="stars">★★★★★</div>
+
+<b>Swastik Beauty Plus</b>
+
+<p data-i18n="reviewhint">
+Your customer reviews will appear here.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="panel">
+
+<h3 data-i18n="leavereview">
+Leave a Review
+</h3>
+
+<p class="note" data-i18n="reviewpublic">
+For a public Google review, use the button below.
+</p>
+
+<input id="rname" placeholder="Your Name">
+
+<textarea id="rtext"
+placeholder="Your Review"></textarea>
+
+<div id="rmsg" class="note"></div>
+
+<button class="btn"
+onclick="saveReview()"
+data-i18n="submit">
+Submit Review
+</button>
+
+<a class="btn"
+target="_blank"
+href="https://www.google.com/search?q=Swastik+Beauty+Plus+Talala"
+data-i18n="googlereview">
+⭐ Google Review
+</a>
+
+</div>
+
+</div>
+
 </section>
+
 
 <section id="contact" class="contact">
-<h2>Contact Us</h2>
-<p>📍 Maruti Complex, Near by Kaniya School, Talala</p>
-<p>📞 <a href="tel:8200084319">8200084319</a></p>
-<p>💬 WhatsApp Appointment</p>
-<a class="btn" href="https://wa.me/918200084319">Book Appointment</a>
+
+<div class="contact-inner">
+
+<h2 class="section-title" data-i18n="contacttitle">
+Contact Us
+</h2>
+
+<p>
+📍 Maruti Complex, Near by Kaniya School, Talala
+</p>
+
+<p>
+📞 <a href="tel:8200084319">8200084319</a>
+</p>
+
+<p>
+💬 WhatsApp Appointment
+</p>
+
+<a class="btn wa"
+href="https://wa.me/918200084319"
+data-i18n="book">
+Book Appointment
+</a>
+
+<a class="btn dark"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=Swastik+Beauty+Plus+Talala"
+data-i18n="map">
+Open Google Maps
+</a>
+
+</div>
+
 </section>
 
+
 <footer>
-<h2>Swastik Beauty</h2>
-<p>Beauty Begins Here</p>
-<p>Maruti Complex, Near by Kaniya School, Talala</p>
-<p>📞 8200084319</p>
+
+<strong>Swastik Beauty Plus</strong>
+
+<br>
+
+<span data-i18n="footer">
+Beauty Begins Here ✨ | Talala, Gujarat | 8200084319
+</span>
+
 </footer>
 
+
+<div class="float">
+
+<a class="call" href="tel:8200084319">📞</a>
+
+<a class="wh"
+href="https://wa.me/918200084319">
+💬
+</a>
+
+</div>
+
+
+<script>
+
+const T={
+
+en:{
+top:"✨ Swastik Beauty Plus | Talala ✨",
+home:"Home",
+services:"Services",
+ourwork:"Our Work",
+reviews:"Reviews",
+contact:"Contact",
+welcome:"WELCOME TO",
+tagline:"Enhance Your Beauty, Reveal Your Confidence ✨",
+viewservices:"View Services",
+whatsapp:"WhatsApp",
+whytitle:"Beauty • Style • Confidence",
+intro:"Professional beauty care in Talala with personal attention and quality service.",
+servicetitle:"Our Services",
+servicenote:"Tap “View All” to see services and prices.",
+viewall:"View All",
+hair:"Hair Care",
+haircut:"Hair Cut",
+skin:"Skin Care",
+makeup:"Makeup",
+nail:"Nail Care",
+threading:"Threading",
+waxing:"Waxing",
+priceNote:"* Prices can vary according to service requirements.",
+worktitle:"Our Work",
+worksub:"Your actual work photos can be added here.",
+work1:"Hair & Beauty Work",
+work2:"Makeup Work",
+work3:"Salon Work",
+reviewtitle:"⭐ Customer Reviews",
+oldreview:"Haircut, Permanent Makeup and Bridal services.",
+reviewhint:"Your customer reviews will appear here.",
+leavereview:"Leave a Review",
+reviewpublic:"For a public Google review, use the button below.",
+submit:"Submit Review",
+googlereview:"⭐ Google Review",
+contacttitle:"Contact Us",
+book:"Book Appointment",
+map:"Open Google Maps",
+footer:"Beauty Begins Here ✨ | Talala, Gujarat | 8200084319"
+},
+
+gu:{
+top:"✨ સ્વસ્તિક બ્યુટી પ્લસ | તાલાળા ✨",
+home:"હોમ",
+services:"સર્વિસ",
+ourwork:"અમારું કામ",
+reviews:"રિવ્યૂ",
+contact:"સંપર્ક",
+welcome:"સ્વાગત છે",
+tagline:"તમારી સુંદરતા વધારો, તમારો આત્મવિશ્વાસ વધારો ✨",
+viewservices:"સર્વિસ જુઓ",
+whatsapp:"વોટ્સએપ",
+whytitle:"સુંદરતા • સ્ટાઇલ • આત્મવિશ્વાસ",
+intro:"તાલાળામાં વ્યક્તિગત કાળજી અને સારી સર્વિસ સાથે પ્રોફેશનલ બ્યુટી કેર.",
+servicetitle:"અમારી સર્વિસ",
+servicenote:"સર્વિસ અને ભાવ જોવા “બધી સર્વિસ” પર ટચ કરો.",
+viewall:"બધી સર્વિસ",
+hair:"હેર કેર",
+haircut:"હેર કટ",
+skin:"સ્કિન કેર",
+makeup:"મેકઅપ",
+nail:"નેલ કેર",
+threading:"થ્રેડિંગ",
+waxing:"વૅક્સિંગ",
+priceNote:"* સર્વિસની જરૂરિયાત પ્રમાણે ભાવમાં ફેરફાર થઈ શકે છે.",
+worktitle:"અમારું કામ",
+worksub:"તમારા કરેલા કામના અસલી ફોટા અહીં ઉમેરી શકાય છે.",
+work1:"હેર અને બ્યુટી વર્ક",
+work2:"મેકઅપ વર્ક",
+work3:"સલોન વર્ક",
+reviewtitle:"⭐ ગ્રાહકોના રિવ્યૂ",
+oldreview:"હેરકટ, પરમેનન્ટ મેકઅપ અને બ્રાઇડલ સર્વિસ.",
+reviewhint:"તમારા ગ્રાહકોના રિવ્યૂ અહીં દેખાશે.",
+leavereview:"રિવ્યૂ આપો",
+reviewpublic:"પબ્લિક Google રિવ્યૂ માટે નીચેનું બટન દબાવો.",
+submit:"સબમિટ કરો",
+googlereview:"⭐ Google રિવ્યૂ",
+contacttitle:"સંપર્ક કરો",
+book:"એપોઇન્ટમેન્ટ બુક કરો",
+map:"Google Maps ખોલો",
+footer:"Beauty Begins Here ✨ | તાલાળા, ગુજરાત | 8200084319"
+},
+
+hi:{
+top:"✨ स्वस्तिक ब्यूटी प्लस | तालाला ✨",
+home:"होम",
+services:"सर्विस",
+ourwork:"हमारा काम",
+reviews:"रिव्यू",
+contact:"संपर्क",
+welcome:"स्वागत है",
+tagline:"अपनी खूबसूरती निखारें, अपना आत्मविश्वास बढ़ाएं ✨",
+viewservices:"सर्विस देखें",
+whatsapp:"व्हाट्सऐप",
+whytitle:"खूबसूरती • स्टाइल • आत्मविश्वास",
+intro:"तालाला में व्यक्तिगत देखभाल और अच्छी सर्विस के साथ प्रोफेशनल ब्यूटी केयर.",
+servicetitle:"हमारी सर्विस",
+servicenote:"सर्विस और कीमत देखने के लिए “सभी सर्विस” दबाएं.",
+viewall:"सभी सर्विस",
+hair:"हेयर केयर",
+haircut:"हेयर कट",
+skin:"स्किन केयर",
+makeup:"मेकअप",
+nail:"नेल केयर",
+threading:"थ्रेडिंग",
+waxing:"वैक्सिंग",
+priceNote:"* सर्विस की जरूरत के अनुसार कीमत बदल सकती है.",
+worktitle:"हमारा काम",
+worksub:"आपके किए हुए काम के असली फोटो यहां जोड़े जा सकते हैं.",
+work1:"हेयर और ब्यूटी वर्क",
+work2:"मेकअप वर्क",
+work3:"सैलून वर्क",
+reviewtitle:"⭐ ग्राहकों के रिव्यू",
+oldreview:"हेयरकट, परमानेंट मेकअप और ब्राइडल सर्विस.",
+reviewhint:"आपके ग्राहकों के रिव्यू यहां दिखाई देंगे.",
+leavereview:"रिव्यू दें",
+reviewpublic:"पब्लिक Google रिव्यू के लिए नीचे वाला बटन दबाएं.",
+submit:"सबमिट करें",
+googlereview:"⭐ Google रिव्यू",
+contacttitle:"संपर्क करें",
+book:"अपॉइंटमेंट बुक करें",
+map:"Google Maps खोलें",
+footer:"Beauty Begins Here ✨ | तालाला, गुजरात | 8200084319"
+}
+
+};
+
+
+function setLang(lang){
+
+document.documentElement.lang=lang;
+
+document.querySelectorAll("[data-i18n]").forEach(el=>{
+
+const key=el.dataset.i18n;
+
+if(T[lang][key]){
+el.textContent=T[lang][key];
+}
+
+});
+
+document.querySelectorAll(".lang button")
+.forEach(b=>b.classList.remove("active"));
+
+document.getElementById(lang)
+.classList.add("active");
+
+localStorage.setItem("swastikLang",lang);
+
+}
+
+
+function saveReview(){
+
+const n=document.getElementById("rname")
+.value.trim();
+
+const t=document.getElementById("rtext")
+.value.trim();
+
+const m=document.getElementById("rmsg");
+
+if(!n||!t){
+
+m.textContent=
+"Please enter your name and review.";
+
+return;
+
+}
+
+let arr=JSON.parse(
+localStorage.getItem("swastikReviews")||"[]"
+);
+
+arr.push({n,t});
+
+localStorage.setItem(
+"swastikReviews",
+JSON.stringify(arr)
+);
+
+m.textContent=
+"Review saved on this device. For a public review, tap Google Review.";
+
+document.getElementById("rname").value="";
+document.getElementById("rtext").value="";
+
+}
+
+
+setLang(
+localStorage.getItem("swastikLang")||"en"
+);
+
+</script>
+
 </body>
-  </html>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swastik Beauty Plus | Talala</title>
+<meta name="description" content="Swastik Beauty Plus Talala - Hair Care, Skin Care, Makeup, Nail Care, Threading, Waxing and Bridal Makeup.">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#090909;color:#fff;line-height:1.55}
+a{text-decoration:none;color:inherit}
+
+header{
+position:sticky;top:0;z-index:99;
+background:rgba(5,5,5,.94);
+backdrop-filter:blur(12px);
+border-bottom:1px solid #b8892e
+}
+
+.top{
+padding:7px;text-align:center;
+color:#f5d58a;font-size:13px
+}
+
+nav{
+max-width:1200px;margin:auto;
+display:flex;align-items:center;gap:12px;
+padding:12px 18px;overflow:auto
+}
+
+.logo{
+font-family:Georgia,serif;
+font-size:22px;color:#f5d58a;
+font-weight:700;white-space:nowrap;
+margin-right:auto
+}
+
+nav a{
+padding:8px 11px;border-radius:20px;
+white-space:nowrap;font-size:14px
+}
+
+nav a:hover{
+background:#f0c75e;color:#111
+}
+
+.lang{
+display:flex;gap:5px;white-space:nowrap
+}
+
+.lang button{
+border:1px solid #8d6926;
+background:#111;color:#fff;
+border-radius:18px;padding:7px 9px;
+cursor:pointer
+}
+
+.lang button.active{
+background:#f0c75e;color:#111
+}
+
+.hero{
+min-height:650px;
+position:relative;
+display:flex;
+align-items:center;
+overflow:hidden;
+background:#111
+}
+
+.hero:before{
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at 75% 45%,#9b6b1730,transparent 35%),
+linear-gradient(90deg,#050505e8,#05050578,#05050525)
+}
+
+.hero img{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(.52)
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:650px;
+padding:60px 7%
+}
+
+.kicker{
+letter-spacing:4px;
+color:#f5d58a;
+font-weight:bold
+}
+
+.hero h1{
+font:700 clamp(42px,7vw,76px)/1 Georgia,serif;
+margin:12px 0;
+background:linear-gradient(#fff,#d6a93d);
+-webkit-background-clip:text;
+color:transparent;
+text-shadow:0 8px 25px #000
+}
+
+.hero p{
+font-size:19px;
+color:#ffd7df
+}
+
+.btn{
+display:inline-block;
+margin:8px 5px 0 0;
+padding:12px 19px;
+border-radius:28px;
+border:1px solid #e0b94e;
+background:linear-gradient(145deg,#f7d477,#a97819);
+color:#111;
+font-weight:700;
+box-shadow:0 8px 20px #0008
+}
+
+.btn.wa{
+background:linear-gradient(145deg,#3ee27b,#129447);
+color:#fff;
+border-color:#45e98a
+}
+
+.btn.dark{
+background:#111;
+color:#fff
+}
+
+section{
+padding:60px 5%;
+max-width:1250px;
+margin:auto
+}
+
+.section-title{
+text-align:center;
+font:700 38px Georgia,serif;
+color:#f5d58a;
+margin-bottom:10px
+}
+
+.subtitle{
+text-align:center;
+color:#bbb;
+margin-bottom:30px
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
+}
+
+.service{
+background:linear-gradient(145deg,#252525,#0e0e0e);
+border:1px solid #765b24;
+border-radius:22px;
+padding:15px;
+box-shadow:
+0 15px 35px #000,
+inset 0 1px #ffffff18;
+transform:translateY(0);
+transition:.25s
+}
+
+.service:hover{
+transform:translateY(-5px);
+box-shadow:
+0 20px 40px #000,
+0 0 18px #d2a52b22
+}
+
+.service img{
+width:100%;
+height:190px;
+object-fit:cover;
+border-radius:15px;
+border:1px solid #765b24
+}
+
+.service h3{
+margin:12px 0;
+color:#f7d477;
+font-size:22px
+}
+
+.price{
+display:flex;
+justify-content:space-between;
+border-bottom:1px dashed #444;
+padding:8px 0;
+font-size:14px
+}
+
+.price b{
+color:#f5d58a
+}
+
+details{
+margin-top:12px
+}
+
+summary{
+cursor:pointer;
+color:#fff;
+background:#171717;
+padding:10px;
+border-radius:12px;
+border:1px solid #333
+}
+
+details .inside{
+padding:5px 2px
+}
+
+.work-grid,.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px
+}
+
+.work-card,.gallery img{
+border-radius:18px;
+border:1px solid #765b24;
+box-shadow:0 12px 25px #000
+}
+
+.work-card{
+overflow:hidden;
+background:#151515
+}
+
+.work-card img{
+width:100%;
+height:230px;
+object-fit:cover
+}
+
+.work-card div{
+padding:12px;
+color:#f5d58a
+}
+
+.review-area{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:22px
+}
+
+.panel{
+background:linear-gradient(145deg,#1d1d1d,#0c0c0c);
+border:1px solid #765b24;
+border-radius:22px;
+padding:22px;
+box-shadow:0 15px 35px #000
+}
+
+.stars{
+color:#ffd43b;
+font-size:24px
+}
+
+.review{
+padding:15px 0;
+border-bottom:1px solid #333
+}
+
+.review:last-child{
+border:0
+}
+
+input,textarea{
+width:100%;
+background:#111;
+color:#fff;
+border:1px solid #555;
+border-radius:12px;
+padding:12px;
+margin:7px 0;
+font:inherit
+}
+
+textarea{
+min-height:100px;
+resize:vertical
+}
+
+.contact{
+background:linear-gradient(145deg,#161616,#080808);
+max-width:none
+}
+
+.contact-inner{
+max-width:1000px;
+margin:auto;
+text-align:center
+}
+
+footer{
+text-align:center;
+padding:30px 15px;
+background:#000;
+border-top:1px solid #765b24;
+color:#aaa
+}
+
+footer strong{
+color:#f5d58a
+}
+
+.float{
+position:fixed;
+right:15px;
+bottom:15px;
+z-index:100;
+display:flex;
+flex-direction:column;
+gap:9px
+}
+
+.float a{
+width:52px;
+height:52px;
+border-radius:50%;
+display:grid;
+place-items:center;
+box-shadow:0 7px 20px #000;
+font-size:22px
+}
+
+.call{background:#1685ff}
+.wh{background:#25d366}
+
+.note{
+color:#999;
+font-size:12px;
+margin-top:12px
+}
+
+@media(max-width:850px){
+.cards,.work-grid,.gallery{
+grid-template-columns:1fr 1fr
+}
+.review-area{
+grid-template-columns:1fr
+}
+nav{
+flex-wrap:wrap
+}
+.logo{
+width:100%;
+text-align:center
+}
+}
+
+@media(max-width:560px){
+.cards,.work-grid,.gallery{
+grid-template-columns:1fr
+}
+.hero{
+min-height:570px
+}
+.hero-content{
+padding:40px 6%
+}
+.hero h1{
+font-size:48px
+}
+section{
+padding:45px 4%
+}
+.section-title{
+font-size:30px
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="top" data-i18n="top">
+✨ Swastik Beauty Plus | Talala ✨
+</div>
+
+<nav>
+
+<div class="logo">
+SWASTIK BEAUTY PLUS
+</div>
+
+<a href="#home" data-i18n="home">Home</a>
+<a href="#services" data-i18n="services">Services</a>
+<a href="#work" data-i18n="ourwork">Our Work</a>
+<a href="#reviews" data-i18n="reviews">Reviews</a>
+<a href="#contact" data-i18n="contact">Contact</a>
+
+<div class="lang">
+<button onclick="setLang('en')" id="en" class="active">EN</button>
+<button onclick="setLang('gu')" id="gu">ગુજરાતી</button>
+<button onclick="setLang('hi')" id="hi">हिन्दी</button>
+</div>
+
+</nav>
+</header>
+
+
+<section class="hero" id="home">
+
+<img src="salon.jpg" alt="Swastik Beauty Plus Talala">
+
+<div class="hero-content">
+
+<div class="kicker" data-i18n="welcome">
+WELCOME TO
+</div>
+
+<h1>Swastik Beauty Plus</h1>
+
+<p data-i18n="tagline">
+Enhance Your Beauty, Reveal Your Confidence ✨
+</p>
+
+<a class="btn" href="#services" data-i18n="viewservices">
+View Services
+</a>
+
+<a class="btn wa"
+href="https://wa.me/918200084319"
+data-i18n="whatsapp">
+WhatsApp
+</a>
+
+</div>
+</section>
+
+
+<section>
+
+<h2 class="section-title" data-i18n="whytitle">
+Beauty • Style • Confidence
+</h2>
+
+<p class="subtitle" data-i18n="intro">
+Professional beauty care in Talala with personal attention and quality service.
+</p>
+
+</section>
+
+
+<section id="services">
+
+<h2 class="section-title" data-i18n="servicetitle">
+Our Services
+</h2>
+
+<p class="subtitle" data-i18n="servicenote">
+Tap “View All” to see services and prices.
+</p>
+
+<div class="cards">
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Hair Care">
+
+<h3>
+💇 <span data-i18n="hair">Hair Care</span>
+</h3>
+
+<div class="price">
+<span data-i18n="haircut">Hair Cut</span>
+<b>₹100+</b>
+</div>
+
+<div class="price">
+<span>Hair Wash</span>
+<b>₹100+</b>
+</div>
+
+<div class="price">
+<span>Hair Spa</span>
+<b>₹399+</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>Hair Colour</span>
+<b>₹399+</b>
+</div>
+
+<div class="price">
+<span>Straightening</span>
+<b>₹999+</b>
+</div>
+
+<div class="price">
+<span>Smoothening</span>
+<b>₹1499+</b>
+</div>
+
+<div class="price">
+<span>Rebonding</span>
+<b>₹1499+</b>
+</div>
+
+<div class="price">
+<span>Keratin</span>
+<b>₹1999+</b>
+</div>
+
+</div>
+</details>
+
+</div>
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Skin Care">
+
+<h3>
+✨ <span data-i18n="skin">Skin Care</span>
+</h3>
+
+<div class="price">
+<span>Basic Facial</span>
+<b>₹299+</b>
+</div>
+
+<div class="price">
+<span>Premium Facial</span>
+<b>₹499+</b>
+</div>
+
+<div class="price">
+<span>Clean-up</span>
+<b>₹199+</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>De-tan</span>
+<b>₹249+</b>
+</div>
+
+<div class="price">
+<span>Bleach</span>
+<b>₹149+</b>
+</div>
+
+<div class="price">
+<span>Face Massage</span>
+<b>₹149+</b>
+</div>
+
+<div class="price">
+<span>Skin Polishing</span>
+<b>₹399+</b>
+</div>
+
+</div>
+</details>
+
+</div>
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Makeup">
+
+<h3>
+💄 <span data-i18n="makeup">Makeup</span>
+</h3>
+
+<div class="price">
+<span>Basic Makeup</span>
+<b>₹499+</b>
+</div>
+
+<div class="price">
+<span>Party Makeup</span>
+<b>₹999+</b>
+</div>
+
+<div class="price">
+<span>Engagement Makeup</span>
+<b>₹1999+</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>Reception Makeup</span>
+<b>₹2499+</b>
+</div>
+
+<div class="price">
+<span>Bridal Makeup</span>
+<b>₹4999+</b>
+</div>
+
+<div class="price">
+<span>Bridal Hairstyle</span>
+<b>₹999+</b>
+</div>
+
+</div>
+</details>
+
+</div>
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Nail Care">
+
+<h3>
+💅 <span data-i18n="nail">Nail Care</span>
+</h3>
+
+<div class="price">
+<span>Manicure</span>
+<b>₹199+</b>
+</div>
+
+<div class="price">
+<span>Pedicure</span>
+<b>₹299+</b>
+</div>
+
+<div class="price">
+<span>Nail Polish</span>
+<b>₹99+</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>Nail Art</span>
+<b>₹199+</b>
+</div>
+
+</div>
+
+</details>
+
+</div>
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Threading">
+
+<h3>
+🧵 <span data-i18n="threading">Threading</span>
+</h3>
+
+<div class="price">
+<span>Eyebrow</span>
+<b>₹30+</b>
+</div>
+
+<div class="price">
+<span>Upper Lip</span>
+<b>₹20+</b>
+</div>
+
+<div class="price">
+<span>Chin</span>
+<b>₹30+</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>Forehead</span>
+<b>₹20+</b>
+</div>
+
+<div class="price">
+<span>Full Face</span>
+<b>₹100</b>
+</div>
+
+</div>
+
+</details>
+
+</div>
+
+
+<div class="service">
+
+<img src="salon.jpg" alt="Waxing">
+
+<h3>
+🧴 <span data-i18n="waxing">Waxing</span>
+</h3>
+
+<div class="price">
+<span>Full Hand</span>
+<b>₹99/149</b>
+</div>
+
+<div class="price">
+<span>Full Leg</span>
+<b>₹249</b>
+</div>
+
+<div class="price">
+<span>Underarms</span>
+<b>₹60</b>
+</div>
+
+<details>
+
+<summary data-i18n="viewall">
+View All
+</summary>
+
+<div class="inside">
+
+<div class="price">
+<span>Half Hand</span>
+<b>Contact</b>
+</div>
+
+<div class="price">
+<span>Half Leg</span>
+<b>₹99/149</b>
+</div>
+
+<div class="price">
+<span>Full Body</span>
+<b>₹499/699</b>
+</div>
+
+<div class="price">
+<span>Face Wax</span>
+<b>₹149</b>
+</div>
+
+</div>
+
+</details>
+
+</div>
+
+</div>
+
+<p class="note" data-i18n="priceNote">
+* Prices can vary according to service requirements.
+</p>
+
+</section>
+
+
+<section id="work">
+
+<h2 class="section-title" data-i18n="worktitle">
+Our Work
+</h2>
+
+<p class="subtitle" data-i18n="worksub">
+Your actual work photos can be added here.
+</p>
+
+<div class="work-grid">
+
+<div class="work-card">
+<img src="salon.jpg" alt="Our Work">
+<div data-i18n="work1">Hair & Beauty Work</div>
+</div>
+
+<div class="work-card">
+<img src="salon.jpg" alt="Our Work">
+<div data-i18n="work2">Makeup Work</div>
+</div>
+
+<div class="work-card">
+<img src="salon.jpg" alt="Our Work">
+<div data-i18n="work3">Salon Work</div>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="reviews">
+
+<h2 class="section-title" data-i18n="reviewtitle">
+⭐ Customer Reviews
+</h2>
+
+<div class="review-area">
+
+<div class="panel">
+
+<div class="review">
+
+<div class="stars">★★★★★</div>
+
+<b>Kaushik Davara</b>
+
+<p data-i18n="oldreview">
+Haircut, Permanent Makeup and Bridal services.
+</p>
+
+</div>
+
+<div class="review">
+
+<div class="stars">★★★★★</div>
+
+<b>Swastik Beauty Plus</b>
+
+<p data-i18n="reviewhint">
+Your customer reviews will appear here.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="panel">
+
+<h3 data-i18n="leavereview">
+Leave a Review
+</h3>
+
+<p class="note" data-i18n="reviewpublic">
+For a public Google review, use the button below.
+</p>
+
+<input id="rname" placeholder="Your Name">
+
+<textarea id="rtext"
+placeholder="Your Review"></textarea>
+
+<div id="rmsg" class="note"></div>
+
+<button class="btn"
+onclick="saveReview()"
+data-i18n="submit">
+Submit Review
+</button>
+
+<a class="btn"
+target="_blank"
+href="https://www.google.com/search?q=Swastik+Beauty+Plus+Talala"
+data-i18n="googlereview">
+⭐ Google Review
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<div class="contact-inner">
+
+<h2 class="section-title" data-i18n="contacttitle">
+Contact Us
+</h2>
+
+<p>
+📍 Maruti Complex, Near by Kaniya School, Talala
+</p>
+
+<p>
+📞 <a href="tel:8200084319">8200084319</a>
+</p>
+
+<p>
+💬 WhatsApp Appointment
+</p>
+
+<a class="btn wa"
+href="https://wa.me/918200084319"
+data-i18n="book">
+Book Appointment
+</a>
+
+<a class="btn dark"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=Swastik+Beauty+Plus+Talala"
+data-i18n="map">
+Open Google Maps
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<strong>Swastik Beauty Plus</strong>
+
+<br>
+
+<span data-i18n="footer">
+Beauty Begins Here ✨ | Talala, Gujarat | 8200084319
+</span>
+
+</footer>
+
+
+<div class="float">
+
+<a class="call" href="tel:8200084319">📞</a>
+
+<a class="wh"
+href="https://wa.me/918200084319">
+💬
+</a>
+
+</div>
+
+
+<script>
+
+const T={
+
+en:{
+top:"✨ Swastik Beauty Plus | Talala ✨",
+home:"Home",
+services:"Services",
+ourwork:"Our Work",
+reviews:"Reviews",
+contact:"Contact",
+welcome:"WELCOME TO",
+tagline:"Enhance Your Beauty, Reveal Your Confidence ✨",
+viewservices:"View Services",
+whatsapp:"WhatsApp",
+whytitle:"Beauty • Style • Confidence",
+intro:"Professional beauty care in Talala with personal attention and quality service.",
+servicetitle:"Our Services",
+servicenote:"Tap “View All” to see services and prices.",
+viewall:"View All",
+hair:"Hair Care",
+haircut:"Hair Cut",
+skin:"Skin Care",
+makeup:"Makeup",
+nail:"Nail Care",
+threading:"Threading",
+waxing:"Waxing",
+priceNote:"* Prices can vary according to service requirements.",
+worktitle:"Our Work",
+worksub:"Your actual work photos can be added here.",
+work1:"Hair & Beauty Work",
+work2:"Makeup Work",
+work3:"Salon Work",
+reviewtitle:"⭐ Customer Reviews",
+oldreview:"Haircut, Permanent Makeup and Bridal services.",
+reviewhint:"Your customer reviews will appear here.",
+leavereview:"Leave a Review",
+reviewpublic:"For a public Google review, use the button below.",
+submit:"Submit Review",
+googlereview:"⭐ Google Review",
+contacttitle:"Contact Us",
+book:"Book Appointment",
+map:"Open Google Maps",
+footer:"Beauty Begins Here ✨ | Talala, Gujarat | 8200084319"
+},
+
+gu:{
+top:"✨ સ્વસ્તિક બ્યુટી પ્લસ | તાલાળા ✨",
+home:"હોમ",
+services:"સર્વિસ",
+ourwork:"અમારું કામ",
+reviews:"રિવ્યૂ",
+contact:"સંપર્ક",
+welcome:"સ્વાગત છે",
+tagline:"તમારી સુંદરતા વધારો, તમારો આત્મવિશ્વાસ વધારો ✨",
+viewservices:"સર્વિસ જુઓ",
+whatsapp:"વોટ્સએપ",
+whytitle:"સુંદરતા • સ્ટાઇલ • આત્મવિશ્વાસ",
+intro:"તાલાળામાં વ્યક્તિગત કાળજી અને સારી સર્વિસ સાથે પ્રોફેશનલ બ્યુટી કેર.",
+servicetitle:"અમારી સર્વિસ",
+servicenote:"સર્વિસ અને ભાવ જોવા “બધી સર્વિસ” પર ટચ કરો.",
+viewall:"બધી સર્વિસ",
+hair:"હેર કેર",
+haircut:"હેર કટ",
+skin:"સ્કિન કેર",
+makeup:"મેકઅપ",
+nail:"નેલ કેર",
+threading:"થ્રેડિંગ",
+waxing:"વૅક્સિંગ",
+priceNote:"* સર્વિસની જરૂરિયાત પ્રમાણે ભાવમાં ફેરફાર થઈ શકે છે.",
+worktitle:"અમારું કામ",
+worksub:"તમારા કરેલા કામના અસલી ફોટા અહીં ઉમેરી શકાય છે.",
+work1:"હેર અને બ્યુટી વર્ક",
+work2:"મેકઅપ વર્ક",
+work3:"સલોન વર્ક",
+reviewtitle:"⭐ ગ્રાહકોના રિવ્યૂ",
+oldreview:"હેરકટ, પરમેનન્ટ મેકઅપ અને બ્રાઇડલ સર્વિસ.",
+reviewhint:"તમારા ગ્રાહકોના રિવ્યૂ અહીં દેખાશે.",
+leavereview:"રિવ્યૂ આપો",
+reviewpublic:"પબ્લિક Google રિવ્યૂ માટે નીચેનું બટન દબાવો.",
+submit:"સબમિટ કરો",
+googlereview:"⭐ Google રિવ્યૂ",
+contacttitle:"સંપર્ક કરો",
+book:"એપોઇન્ટમેન્ટ બુક કરો",
+map:"Google Maps ખોલો",
+footer:"Beauty Begins Here ✨ | તાલાળા, ગુજરાત | 8200084319"
+},
+
+hi:{
+top:"✨ स्वस्तिक ब्यूटी प्लस | तालाला ✨",
+home:"होम",
+services:"सर्विस",
+ourwork:"हमारा काम",
+reviews:"रिव्यू",
+contact:"संपर्क",
+welcome:"स्वागत है",
+tagline:"अपनी खूबसूरती निखारें, अपना आत्मविश्वास बढ़ाएं ✨",
+viewservices:"सर्विस देखें",
+whatsapp:"व्हाट्सऐप",
+whytitle:"खूबसूरती • स्टाइल • आत्मविश्वास",
+intro:"तालाला में व्यक्तिगत देखभाल और अच्छी सर्विस के साथ प्रोफेशनल ब्यूटी केयर.",
+servicetitle:"हमारी सर्विस",
+servicenote:"सर्विस और कीमत देखने के लिए “सभी सर्विस” दबाएं.",
+viewall:"सभी सर्विस",
+hair:"हेयर केयर",
+haircut:"हेयर कट",
+skin:"स्किन केयर",
+makeup:"मेकअप",
+nail:"नेल केयर",
+threading:"थ्रेडिंग",
+waxing:"वैक्सिंग",
+priceNote:"* सर्विस की जरूरत के अनुसार कीमत बदल सकती है.",
+worktitle:"हमारा काम",
+worksub:"आपके किए हुए काम के असली फोटो यहां जोड़े जा सकते हैं.",
+work1:"हेयर और ब्यूटी वर्क",
+work2:"मेकअप वर्क",
+work3:"सैलून वर्क",
+reviewtitle:"⭐ ग्राहकों के रिव्यू",
+oldreview:"हेयरकट, परमानेंट मेकअप और ब्राइडल सर्विस.",
+reviewhint:"आपके ग्राहकों के रिव्यू यहां दिखाई देंगे.",
+leavereview:"रिव्यू दें",
+reviewpublic:"पब्लिक Google रिव्यू के लिए नीचे वाला बटन दबाएं.",
+submit:"सबमिट करें",
+googlereview:"⭐ Google रिव्यू",
+contacttitle:"संपर्क करें",
+book:"अपॉइंटमेंट बुक करें",
+map:"Google Maps खोलें",
+footer:"Beauty Begins Here ✨ | तालाला, गुजरात | 8200084319"
+}
+
+};
+
+
+function setLang(lang){
+
+document.documentElement.lang=lang;
+
+document.querySelectorAll("[data-i18n]").forEach(el=>{
+
+const key=el.dataset.i18n;
+
+if(T[lang][key]){
+el.textContent=T[lang][key];
+}
+
+});
+
+document.querySelectorAll(".lang button")
+.forEach(b=>b.classList.remove("active"));
+
+document.getElementById(lang)
+.classList.add("active");
+
+localStorage.setItem("swastikLang",lang);
+
+}
+
+
+function saveReview(){
+
+const n=document.getElementById("rname")
+.value.trim();
+
+const t=document.getElementById("rtext")
+.value.trim();
+
+const m=document.getElementById("rmsg");
+
+if(!n||!t){
+
+m.textContent=
+"Please enter your name and review.";
+
+return;
+
+}
+
+let arr=JSON.parse(
+localStorage.getItem("swastikReviews")||"[]"
+);
+
+arr.push({n,t});
+
+localStorage.setItem(
+"swastikReviews",
+JSON.stringify(arr)
+);
+
+m.textContent=
+"Review saved on this device. For a public review, tap Google Review.";
+
+document.getElementById("rname").value="";
+document.getElementById("rtext").value="";
+
+}
+
+
+setLang(
+localStorage.getItem("swastikLang")||"en"
+);
+
+</script>
+
+</body>
+</html>
